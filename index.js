@@ -11,7 +11,12 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  $("body, html").animate({ scrollTop: 0 }, 200);
+  $("body, html").animate(
+    {
+      scrollTop: 0,
+    },
+    200
+  );
 }
 
 $(window).scroll(function () {
@@ -45,19 +50,20 @@ $(document).ready(function () {
     event.preventDefault();
 
     const email = $("#exampleInputEmail1").val();
-    const text = $("#exampleInputText").val()
+    const text = $("#exampleInputText").val();
 
-    if (email.length > 0 && (email.match(/.+?\@.+/g) || []).length !== 1 || email.length === 0) {
+    if (
+      (email.length > 0 && (email.match(/.+?\@.+/g) || []).length !== 1) ||
+      email.length === 0
+    ) {
       console.log("invalid");
       $(".tipEmail").addClass("showTip");
-    } 
-    else if(text.length < 10) {
+    } else if (text.length < 10) {
       $(".tipEmail").removeClass("showTip");
       $(".tipText").addClass("showTip");
       // еще бы добавить максимальное количество символов и защиту
       // от кода/ссылок внутри текста
-    }
-    else {
+    } else {
       $(".tipEmail").removeClass("showTip");
       $(".tipText").removeClass("showTip");
       $(".feedbackFormBlock form").addClass("hideForm");
