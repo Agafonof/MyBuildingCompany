@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyBuildingCompany</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./index.css" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+  <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+    <div class="container-fluid">
+      <img id="logo" src="./public/logo.png" alt="logo" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#top">Феникс</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">О компании</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feedback">Связаться с нами</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="promoBlock">Квартира мечты в центре города</div>
+    <div id="about" class="plug">
+      <div class="border"></div>
+    </div>
+    <div class="companyInfoBlock">
+      <div class="imageBlock">
+        <image id="infoPhoto" src="./public/infoPhoto.jpeg" alt="infoImage" />
+      </div>
+      <div class="textBlock">
+        <h1>Строительная компания Феникс</h1>
+        <p>
+          Здесь немного информации о том, как давно мы занимаемся
+          строительством больших и красивых домов. И тем не менее, здесь мы
+          опишем, насколько хороши мы в этом деле и почему именно нам стоит
+          доверять.
+        </p>
+        <p>
+          А здесь также немного информации о том, как давно мы занимаемся
+          строительством больших и красивых домов. И тем не менее, здесь мы
+          опишем, насколько хороши мы в этом деле и почему именно нам стоит
+          доверять.
+        </p>
+      </div>
+    </div>
+    <div id="contacts" class="plug">
+      <div class="border "></div>
+    </div>
+    <div class="contactsBlock">
+
+      <h1>Контакты</h1>
+
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-header">Отдел продаж</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">+7 (495) 000-00-01</li>
+            <li class="list-group-item">sales@phoenix.com</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-header">Центр клиентской поддержки</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">+7 (495) 000-00-02</li>
+            <li class="list-group-item">support@phoenix.com</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-header">HR-отдел</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">+7 (495) 000-00-03</li>
+            <li class="list-group-item">hr@phoenix.com</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="feedback" class="plug">
+      <div class="border"></div>
+    </div>
+
+    <div class="feedbackFormBlock">
+      <h1>Напишите нам</h1>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Ваш email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+          <label for="text" class="form-label">Ваше обращение</label>
+          <textarea type="text" class="form-control" id="exampleInputText"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-secondary">Отправить</button>
+      </form>
+      <div class="success">Успешно отправлено</div>
+      <div class="tipEmail">Некорректно введен email</div>
+      <div class="tipText">Слишком короткое сообщение</div>
+    </div>
+    <div class="footer">CopyRight</div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="index.js"></script>
+
+</body>
+
+</html>

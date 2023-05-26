@@ -1,0 +1,420 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+
+.navbar {
+  max-width: 100vw;
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+
+#logo {
+  position: re;
+  width: 60px;
+}
+
+.promoBlock {
+  font-size: 76px;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vw;
+  background-image: url("./public/promoPhoto.jpeg");
+  background-size: cover;
+  padding-bottom: 60px;
+}
+
+.plug {
+  width: 100vw;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 100vw;
+  height: 5vw;
+}
+
+.companyInfoBlock {
+  display: flex;
+  flex-direction: row;
+  height: 50vw;
+}
+
+.textBlock {
+  color: white;
+  min-width: 50vw;
+  background-color: rgb(0, 33, 61);
+  padding: 0 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.textBlock h1,
+.textBlock p,
+.feedbackFormBlock h1,
+.feedbackFormBlock form,
+.contactsBlock h1 {
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.textBlock h1.fadeIn,
+.textBlock p.fadeIn,
+.card.fadeIn,
+.feedbackFormBlock h1.fadeIn,
+.feedbackFormBlock form.fadeIn,
+.contactsBlock h1.fadeIn {
+    opacity: 1;
+    transition: 1.5s ease;
+}
+
+
+.fadeIn {
+  opacity: 1;
+  transition: 1.5s ease;
+}
+
+.imageBlock {
+  min-width: 50vw;
+}
+
+#infoPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+h1 {
+  text-align: center;
+  /* margin-bottom: 5vw; */
+  font-size: 32px;
+}
+
+p {
+  margin: 50px 20px 0;
+  font-size: 22px;
+  text-indent: 10%;
+  text-align: justify;
+}
+
+.contactsBlock {
+  min-width: 100vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  width: 18rem
+}
+
+
+.card-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contactsBlock h1 {
+  padding-bottom: 100px;
+  color: white;
+}
+
+.border {
+  -webkit-font-smoothing: antialiased;
+  border-bottom-color: rgb(33, 36, 38);
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-width: 1;
+  border-left-color: rgb(33, 36, 38);
+  border-right-color: rgb(33, 36, 38);
+
+  border-top-color: rgb(33, 36, 38);
+
+  box-sizing: border-box;
+  color: rgb(33, 36, 38);
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  height: 1px;
+  line-height: 17px;
+  width: 80vw;
+}
+
+.feedbackFormBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 33, 61);
+  width: 100vw;
+  height: 50vw;
+  color: white;
+}
+
+.feedbackFormBlock h1 {
+  padding-bottom: 50px;
+}
+
+form {
+  width: 30vw;
+}
+
+form.hideForm {
+  display: none;
+}
+
+.success {
+  display: none;
+}
+
+.tipText, .tipEmail {
+  display: none;
+}
+
+.tipText.showTip, .tipEmail.showTip {
+  display: block;
+  color: red;
+  font-size: 28px;
+}
+
+.success.showMessage {
+  background-color: green;
+  width: 600px;
+  height: 50px;
+  text-align: center;
+  font-size: 28px;
+  display: block;
+  border-radius: 15px;
+}
+
+textarea {
+  height: 10vw;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 2;
+  border: 1px solid black;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 33, 61);
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 36px;
+  width: 5vw;
+  height: 5vw;
+  transition-duration: 0.3s;
+}
+
+#myBtn:hover {
+  background-color: rgb(0, 33, 61);
+  color: white;
+  border: 1px solid white;
+  transition-duration: 0.3s;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .promoBlock {
+    font-size: 58px;
+  }
+
+  .companyInfoBlock h1 {
+    font-size: 30px;
+  }
+
+  .companyInfoBlock p {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 25%
+  }
+  
+  .card-header {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .promoBlock {
+    font-size: 46px;
+    font-weight: 800;
+  }
+
+  .companyInfoBlock h1 {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
+  .companyInfoBlock p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+
+  .card {
+    width: 25%
+  }
+
+  .card-header {
+    height: 60px;
+  }
+
+  .list-group-item {
+    font-size: 14px;
+  }
+
+  form {
+    width: 50vw;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .promoBlock {
+    font-size: 28px;
+    font-weight: 800;
+    height: 80vw;
+  }
+
+  .companyInfoBlock {
+    height: 80vw;
+  }
+
+  .companyInfoBlock h1 {
+    font-size: 20px;
+    padding-bottom: 25px;   
+  }
+
+  .companyInfoBlock p {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+  }
+
+  .contactsBlock {
+    height: 80vw;
+  }
+
+  .card {
+    width: 25%
+  }
+
+  .card-header {
+    font-size: 14px;
+  }
+
+  .list-group-item {
+    font-size: 9px;
+  }
+
+  .feedbackFormBlock {
+    height: 80vw;
+  }
+
+ .tipText.showTip, .tipEmail.showTip {
+  padding-top: 10px;
+    font-size: 14px;
+  }
+
+  form {
+    width: 50vw;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .promoBlock {
+    font-size: 48px;
+    font-weight: 800;
+    height: 80vw;
+    text-align: center;
+  }
+
+  .companyInfoBlock {
+    height: 150vw;
+  }
+
+  .companyInfoBlock h1 {
+    font-size: 20px;
+    padding-bottom: 25px;   
+  }
+
+  .companyInfoBlock p {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+  }
+
+  .contactsBlock {
+    height: 150vw;
+  }
+
+  .card {
+    width: 30%
+  }
+
+  .card-header {
+    font-size: 10px;
+  }
+
+  .list-group-item {
+    font-size: 8px;
+    padding: 1;
+  }
+
+  .feedbackFormBlock {
+    height: 150vw;
+  }
+
+ .tipText.showTip, .tipEmail.showTip {
+  padding-top: 10px;
+    font-size: 14px;
+  }
+
+  form {
+    width: 70vw;
+  }
+
+  textarea {
+    height: 30vw
+  }
+
+}
